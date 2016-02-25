@@ -20,7 +20,7 @@
     <script type="text/javascript" src="{{ URL::asset('//oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js') }}"></script>
     <script type="text/javascript" src="{{ URL::asset('//oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js') }}"></script>
     <![endif]-->
-    <link rel="shortcut icon" type="image/x-icon" href="favicon1.png"  />
+    <link rel="shortcut icon" type="image/x-icon" href={{asset('favicon1.png')}}/>
 </head>
 
 <body>
@@ -44,17 +44,17 @@
     <ul class="sidebar-nav1">
         <a id="menu-close1" class="btn btn-light btn-lg pull-right toggle1" type="button"><i class="fa fa-times"></i></a>
         <li class="sidebar-brand1"><a href="#top" onclick = $('#menu-close1').click(); >SELECT LANGUAGE</a></li>
-        <li><a href="#" onclick = $('#menu-close1').click(); ><img src="img/lang/en.png" alt=""/>&nbsp; English</a></li>
-        <li><a href="#" onclick = $('#menu-close1').click(); ><img src="img/lang/ba.png" alt=""/>&nbsp; Bosanski</a></li>
-        <li><a href="#" onclick = $('#menu-close1').click(); ><img src="img/lang/de.png" alt=""/>&nbsp; German</a></li>
-        <li><a href="#" onclick = $('#menu-close1').click(); ><img src="img/lang/es.png" alt=""/>&nbsp; Spanish</a></li>
+        <li><a href="#" onclick = $('#menu-close1').click(); ><img src={{asset('img/lang/en.png')}} alt=""/>&nbsp; English</a></li>
+        <li><a href="#" onclick = $('#menu-close1').click(); ><img src={{asset('img/lang/ba.png')}} alt=""/>&nbsp; Bosanski</a></li>
+        <li><a href="#" onclick = $('#menu-close1').click(); ><img src={{asset('img/lang/de.png')}} alt=""/>&nbsp; German</a></li>
+        <li><a href="#" onclick = $('#menu-close1').click(); ><img src={{asset('img/lang/es.png')}} alt=""/>&nbsp; Spanish</a></li>
     </ul>
 </nav>
 
 <!-- Header -->
 <header id="top" class="header">
     <div class="text-vertical-center">
-        <img class="imglogo" src="img/1.png" alt="">
+        <img class="imglogo" src={{asset('img/1.png')}} alt="Logo">
         <br>
         <div class="container-fluid">
             <div class="col-md-6 col-md-offset-3">
@@ -93,7 +93,7 @@
         </div><!--/container-fluid-->
     </div><!--/text-vertical-center-->
     <div id="autic" class="autic">
-        <img class="imgautic" src="img/taxi_cab_clip_art.png" alt="">
+        <img class="imgautic" src={{asset('img/taxi_cab_clip_art.png')}} alt="">
     </div><!--/autic-->
 </header>
 

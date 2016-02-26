@@ -20,7 +20,7 @@
     <script type="text/javascript" src="{{ URL::asset('//oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js') }}"></script>
     <script type="text/javascript" src="{{ URL::asset('//oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js') }}"></script>
     <![endif]-->
-    <link rel="shortcut icon" type="image/x-icon" href={{asset('favicon1.png')}}/>
+    <link rel="shortcut icon" type="image/x-icon" href="{{asset('favicon1.png')}}"/>
 </head>
 
 <body>
@@ -39,7 +39,7 @@
 </div>
 
 <!-- Language select -->
-<a id="menu-toggle1" class="btn btn-dark btn-lg toggle1" type="button">Flags</a>
+<a id="menu-toggle1" class="btn btn-dark btn-lg toggle1" type="button"><span><i class="fa fa-globe"></i></span></a>
 <nav id="sidebar-wrapper1">
     <ul class="sidebar-nav1">
         <a id="menu-close1" class="btn btn-light btn-lg pull-right toggle1" type="button"><i class="fa fa-times"></i></a>
@@ -57,28 +57,27 @@
         <img class="imglogo" src={{asset('img/1.png')}} alt="Logo">
         <br>
         <div class="container-fluid">
-            <div class="col-md-6 col-md-offset-3">
+            <div class="col-md-8 col-md-offset-2">
                 <div class="row">
                     <div class="col-md-12">
                         <h2>@yield('content')</h2>
-
                         <div class="content">
                             <div class="row">
-                                <div calss="col-sm-8">
-                                    <form id="searchform" role="input" method="POST" action="{{ url('task2') }}">
+                                <div class="col-md-6 col-md-offset-3">
+                                    <form id="searchform" role="input" method="POST" action="">
                                         <div class="form-group" id="custom-search-input">
-                                            <div class="col-sm-8">
+                                            <div class="col-md-8">
                                                 <input type="text" class="form-control input-lg" id="From" name="from" placeholder="Origin" value="">
                                             </div>
                                         </div>
                                         <div class="form-group" id="custom-search-input">
-                                            <div class="col-sm-8">
+                                            <div class="col-md-8">
                                                 <input type="text" class="form-control input-lg" id="To" name="to" placeholder="Destination" value="">
                                             </div>
                                         </div>
                                         <div class="form-group">
-                                            <div class="col-sm-8 col-sm-offset-2">
-                                                <input id="submit" name="submit" type="submit" value="Search" class="btn btn-info btn-lg">
+                                            <div class="col-md-8 col-md-offset-2">
+                                                <input id="submit" name="submit" type="submit" value="Search" class="btn btn-default btn-lg">
                                             </div>
                                             <br>
                                             <br>
@@ -265,7 +264,7 @@
                 if (target.length) {
                     $('html,body').animate({
                         scrollTop: target.offset().top
-                    }, 1000);
+                    }, 600);
                     return false;
                 }
             }

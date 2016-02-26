@@ -8,19 +8,19 @@
     <meta name="author" content="Tingea d.o.o.">
     <title>TAXI-PRICE</title>
     <!-- Bootstrap Core CSS -->
-    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="{{ URL::asset('css/bootstrap.min.css') }}">
     <!-- Custom CSS -->
-    <link href="css/taxiprice.css" rel="stylesheet">
+    <link rel="stylesheet" href="{{ URL::asset('css/taxiprice.css') }}">
     <!-- Custom Fonts -->
-    <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
-    <link href="http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="{{ URL::asset('font-awesome/css/font-awesome.min.css') }}">
+    <link rel="stylesheet" href="{{ URL::asset('//fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,300italic,400italic,700italic') }}">
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
-    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-    <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <script type="text/javascript" src="{{ URL::asset('//oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js') }}"></script>
+    <script type="text/javascript" src="{{ URL::asset('//oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js') }}"></script>
     <![endif]-->
-    <link rel="shortcut icon" type="image/x-icon" href="favicon1.png"  />
+    <link rel="shortcut icon" type="image/x-icon" href="{{asset('favicon1.png')}}"/>
 </head>
 
 <body>
@@ -39,47 +39,45 @@
 </div>
 
 <!-- Language select -->
-<a id="menu-toggle1" class="btn btn-dark btn-lg toggle1" type="button">Flags</a>
+<a id="menu-toggle1" class="btn btn-dark btn-lg toggle1" type="button"><span><i class="fa fa-globe"></i></span></a>
 <nav id="sidebar-wrapper1">
     <ul class="sidebar-nav1">
         <a id="menu-close1" class="btn btn-light btn-lg pull-right toggle1" type="button"><i class="fa fa-times"></i></a>
         <li class="sidebar-brand1"><a href="#top" onclick = $('#menu-close1').click(); >SELECT LANGUAGE</a></li>
-        <li><a href="#" onclick = $('#menu-close1').click(); ><img src="img/lang/en.png" alt=""/>&nbsp; English</a></li>
-        <li><a href="#" onclick = $('#menu-close1').click(); ><img src="img/lang/ba.png" alt=""/>&nbsp; Bosanski</a></li>
-        <li><a href="#" onclick = $('#menu-close1').click(); ><img src="img/lang/de.png" alt=""/>&nbsp; German</a></li>
-        <li><a href="#" onclick = $('#menu-close1').click(); ><img src="img/lang/es.png" alt=""/>&nbsp; Spanish</a></li>
+        <li><a href="#" onclick = $('#menu-close1').click(); ><img src={{asset('img/lang/en.png')}} alt=""/>&nbsp; English</a></li>
+        <li><a href="#" onclick = $('#menu-close1').click(); ><img src={{asset('img/lang/ba.png')}} alt=""/>&nbsp; Bosanski</a></li>
+        <li><a href="#" onclick = $('#menu-close1').click(); ><img src={{asset('img/lang/de.png')}} alt=""/>&nbsp; German</a></li>
+        <li><a href="#" onclick = $('#menu-close1').click(); ><img src={{asset('img/lang/es.png')}} alt=""/>&nbsp; Spanish</a></li>
     </ul>
 </nav>
 
 <!-- Header -->
 <header id="top" class="header">
     <div class="text-vertical-center">
-        <img class="imglogo" src="img/1.png" alt="">
+        <img class="imglogo" src={{asset('img/1.png')}} alt="Logo">
         <br>
         <div class="container-fluid">
-            <div class="col-md-6 col-md-offset-3">
+            <div class="col-md-8 col-md-offset-2">
                 <div class="row">
                     <div class="col-md-12">
                         <h2>Your guide trough cities</h2>
-
-
                             <div class="content">
                                 <div class="row">
-                                    <div calss="col-sm-8">
+                                    <div class="col-md-6 col-md-offset-3">
                                         <form id="searchform" role="input" method="POST" action="{{ url('task') }}">
                                             <div class="form-group" id="custom-search-input">
-                                                <div class="col-sm-8">
+                                                <div class="col-md-8">
                                                     <input type="text" class="form-control input-lg" id="drzava" name="drzava" placeholder="Insert prefix of your country etc BA" value="">
                                                 </div>
                                             </div>
                                             <div class="form-group" id="custom-search-input">
-                                                <div class="col-sm-8">
+                                                <div class="col-md-8">
                                                     <input type="text" class="form-control input-lg" id="grad" name="grad" placeholder="Insert city name " value="">
                                                 </div>
                                             </div>
                                             <div class="form-group">
-                                                <div class="col-sm-8 col-sm-offset-2">
-                                                    <input id="submit" name="submit" type="submit" value="Search" class="btn btn-info btn-lg">
+                                                <div class="col-md-8 col-md-offset-2">
+                                                    <input id="submit" name="submit" type="submit" value="Search" class="btn btn-default btn-lg">
                                                 </div>
                                                 <br>
                                                 <br>
@@ -88,8 +86,7 @@
                                     </div>
                                 </div>
                             </div>
-
-
+                        <!--
                         <div id="custom-search-input">
                             <form action="{{ url('task') }}" method="POST" id="searchform" role="input">
                                 <div class="input-group col-md-12">
@@ -100,13 +97,14 @@
                                 </div>
                             </form>
                         </div>
+                        -->
                     </div>
                 </div> <!-- /search  -->
             </div><!--/center veliki-->
         </div><!--/container-fluid-->
     </div><!--/text-vertical-center-->
     <div id="autic" class="autic">
-        <img class="imgautic" src="img/taxi_cab_clip_art.png" alt="">
+        <img class="imgautic" src={{asset('img/taxi_cab_clip_art.png')}} alt="">
     </div><!--/autic-->
 </header>
 
@@ -278,7 +276,7 @@
                 if (target.length) {
                     $('html,body').animate({
                         scrollTop: target.offset().top
-                    }, 1000);
+                    }, 600);
                     return false;
                 }
             }

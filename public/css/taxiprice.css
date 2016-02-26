@@ -12,19 +12,19 @@ h2 {
     color: #ffbf00;
 }
 .text-vertical-center {
-    display: inline-block;  /* display: table-cell; */
-    text-align: center;     /* text-align: center; */
-    vertical-align: middle; /* vertical-align: middle; */
-    color: #fff;            /* color: #fff; */
+    display: table-cell;
+    text-align: center;
+    vertical-align: top;
+    color: #fff;
     float: none;
-    margin-top: 5%;
+    padding-top: 5%;
 }
 .text-vertical-center h1 {
     margin: 0;
     padding: 0;
     font-size: 4.5em;
     font-weight: 700;
-    color: #fff; /* Erodin */
+    color: #fff;
 }
 /* Custom Button Styles */
 .btn-dark {
@@ -53,10 +53,10 @@ hr.small {
 #sidebar-wrapper {
     z-index: 1000;
     position: fixed;
-    left: 0; /* Erodin org right */
+    left: 0;
     width: 250px;
     height: 100%;
-    margin-left: -250px; /* Erodin org margin-right */
+    margin-left: -250px;
     overflow-y: auto;
     background: #222;
     -webkit-transition: all 0.4s ease 0s;
@@ -84,7 +84,7 @@ hr.small {
 }
 .sidebar-nav li a:hover {
     text-decoration: none;
-    color: #ffbf00; /* Erodin org #fff */
+    color: #ffbf00;
     background: rgba(255,255,255,0.2);
 }
 .sidebar-nav li a:active, .sidebar-nav li a:focus {
@@ -223,7 +223,7 @@ hr.small {
     width: 100%;
     height: 400px;
     color: #fff;
-    background: url(../../public/img/callout.jpg) no-repeat center center scroll;
+    /* background: url(../../public/img/callout.jpg) no-repeat center center scroll; */
     -webkit-background-size: cover;
     -moz-background-size: cover;
     background-size: cover;
@@ -258,12 +258,12 @@ hr.small {
     height: 400px;
 }
 .imglogo {
-    width: 300px;
+    width: 20%;
 }
 .imgautic {
     width: 220px;
 }
-/* Erodin Search */
+/* Erodin Search START */
 #custom-search-input {
     padding: 3px;
     border: solid 1px #ffbf00;
@@ -315,7 +315,7 @@ hr.small {
 /* placeholder mjenjanje boje end*/
 .input-lg {
     background: none;
-    font-size: 24px;
+    font-size: 20px;
     font-style: italic;
     color: #fff;
 }
@@ -374,7 +374,6 @@ hr.small {
       font-size: 18px;
     }
 }
-
 @media(max-width:480px) {
     .imglogo {
         margin-top: 20px;

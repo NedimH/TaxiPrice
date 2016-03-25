@@ -201,9 +201,9 @@
 
 <!-- Map -->
 <section id="kontakt" class="kontakt">
-    <div class="map">
+    <!--<div class="map">
         <iframe frameborder="no" marginheight="0" marginwidth="0" scrolling="no" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2876.8353833569!2d18.419694915758875!3d43.85924054710028!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4758c8cfecc15cf7%3A0xf2e28e7c29ab216!2sTingea!5e0!3m2!1sen!2sba!4v1445552334986"></iframe>
-    </div>
+    </div>-->
 </section>
 
 <!-- Footer -->

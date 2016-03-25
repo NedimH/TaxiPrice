@@ -64,27 +64,26 @@
                         <div class="content">
                             <div class="row">
                                 <div class="col-md-6 col-md-offset-3">
+                                    <div class="col-md-12">
                                     <form id="searchform" role="input" method="POST" action="">
                                         <div class="form-group" id="custom-search-input">
-                                            <div class="col-md-8">
-                                                <input type="text" class="form-control input-lg" id="From" name="from" placeholder="Origin" value="">
+
+                                                <input type="text" class="form-control input-lg" id="origin-input" name="from" placeholder="Enter an origin location" value="">
                                             </div>
-                                        </div>
+
                                         <div class="form-group" id="custom-search-input">
-                                            <div class="col-md-8">
-                                                <input type="text" class="form-control input-lg" id="To" name="to" placeholder="Destination" value="">
-                                            </div>
+
+                                                <input type="text" class="form-control input-lg" id="destination-input" name="to" placeholder="Enter a destination location" value="">
+
                                         </div>
-                                        <div class="form-group">
-                                            <div class="col-md-8 col-md-offset-2">
-                                                <input id="submit" name="submit" type="submit" value="Search" class="btn btn-default btn-lg">
-                                            </div>
-                                            <br>
-                                            <br>
-                                        </div>
+                                    </div>
+                                    </div>
                                     </form>
                                 </div>
+                                    <div id="map" style="width: 100%; height: 400px"></div>
+                                </div>
                             </div>
+
                         </div>
                     </div>
                 </div> <!-- /search  -->
@@ -189,9 +188,9 @@
 
 <!-- Map -->
 <section id="kontakt" class="kontakt">
-    <div class="map">
+    <!--<div class="map">
         <iframe frameborder="no" marginheight="0" marginwidth="0" scrolling="no" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2876.8353833569!2d18.419694915758875!3d43.85924054710028!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4758c8cfecc15cf7%3A0xf2e28e7c29ab216!2sTingea!5e0!3m2!1sen!2sba!4v1445552334986"></iframe>
-    </div>
+    </div>-->
 </section>
 
 <!-- Footer -->
